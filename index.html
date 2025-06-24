@@ -8,37 +8,66 @@
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
-      background: #f4f4f4;
+      background: #ebe9d8;
     }
     h1 {
       color: #333;
     }
     .member {
       background: #fff;
-      padding: 15px;
+      padding: 40px 20px;
       margin-bottom: 10px;
       border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      box-shadow: 0 0 5px rgb(23, 219, 121);
+      animation: pulse-green 4s infinite;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+    @keyframes pulse-green {
+      0% {
+        box-shadow: 0 0 0 0 rgba(0, 238, 255, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 20px 20px rgba(0, 255, 0, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+      }
     }
       .avatar {
       max-width: 100px;
     }
+    .member h2 {
+      margin-top: 0 ;
+    }
+    .member p {
+      margin: 5px 0;
+    }
+    .member strong {
+      color: #555;
+    }
+    
   </style>
 </head>
 <body>
-  <h1>Our Team</h1>
+  <h1><b>Our Team</b></h1>
 
-  <!-- 👇 Each student adds their member block here -->
-  <!-- Example:
+  <!-- 👇 Each student adds their member block here
+  Example:
   <div class="member">
     <h2>Student Name</h2>
     <p><strong>GitHub:</strong> @username</p>
     <p><strong>Favorite Tech:</strong> JavaScript</p>
     <p><strong>Fun Fact:</strong> I love cats!</p>
+  </div> -->
+  <div class="member">
+    <h2><b>Kevin Ndyabandiho</b></h2>
+    <p><strong>GitHub:</strong> @kevinhun1</p>
+    <p><strong>Favorite Tech:</strong> Containerized Applications</p>
+    <p><strong>Fun Fact:</strong> I enjoy crossfit workouts!</p>
+    <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Lion" style="width:150px; height:auto; display:block; margin:16px auto;">
   </div>
-  -->
   
-
 </body>
 </html>
-    
